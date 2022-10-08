@@ -13,8 +13,8 @@
 		829D5A2628F183070078676D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829D5A2428F183070078676D /* Main.storyboard */; };
 		829D5A2828F183250078676D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829D5A2728F183250078676D /* Assets.xcassets */; };
 		829D5A2B28F183250078676D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829D5A2928F183250078676D /* LaunchScreen.storyboard */; };
-		829D5A3428F186D80078676D /* EuclidFlexRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 829D5A3328F186D80078676D /* EuclidFlexRegular.ttf */; };
 		829D5A3628F1878C0078676D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D5A3528F1878C0078676D /* Data.swift */; };
+		829D5B0F28F1BB0B0078676D /* EuclidFlexSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 829D5B0E28F1BB0B0078676D /* EuclidFlexSemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		829D5A2728F183250078676D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		829D5A2A28F183250078676D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		829D5A2C28F183250078676D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		829D5A3328F186D80078676D /* EuclidFlexRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexRegular.ttf; sourceTree = "<group>"; };
 		829D5A3528F1878C0078676D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		829D5B0E28F1BB0B0078676D /* EuclidFlexSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexSemiBold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		829D5A1D28F182FB0078676D /* YoutubeExplorePageDemo */ = {
 			isa = PBXGroup;
 			children = (
-				829D5A3228F186CF0078676D /* fonts */,
+				829D5B0D28F1BADA0078676D /* fonts */,
 				829D5A3528F1878C0078676D /* Data.swift */,
 				829D5A1E28F182FB0078676D /* AppDelegate.swift */,
 				829D5A2028F182FD0078676D /* SceneDelegate.swift */,
@@ -73,10 +73,10 @@
 			path = YoutubeExplorePageDemo;
 			sourceTree = "<group>";
 		};
-		829D5A3228F186CF0078676D /* fonts */ = {
+		829D5B0D28F1BADA0078676D /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				829D5A3328F186D80078676D /* EuclidFlexRegular.ttf */,
+				829D5B0E28F1BB0B0078676D /* EuclidFlexSemiBold.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829D5A3428F186D80078676D /* EuclidFlexRegular.ttf in Resources */,
 				829D5A2B28F183250078676D /* LaunchScreen.storyboard in Resources */,
 				829D5A2828F183250078676D /* Assets.xcassets in Resources */,
+				829D5B0F28F1BB0B0078676D /* EuclidFlexSemiBold.ttf in Resources */,
 				829D5A2628F183070078676D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
