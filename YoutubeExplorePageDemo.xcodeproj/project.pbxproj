@@ -15,6 +15,9 @@
 		829D5A2B28F183250078676D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829D5A2928F183250078676D /* LaunchScreen.storyboard */; };
 		829D5A3628F1878C0078676D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D5A3528F1878C0078676D /* Data.swift */; };
 		829D5B0F28F1BB0B0078676D /* EuclidFlexSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 829D5B0E28F1BB0B0078676D /* EuclidFlexSemiBold.ttf */; };
+		829D5B1128F1C4E50078676D /* CellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D5B1028F1C4E50078676D /* CellOne.swift */; };
+		829D5B1328F1C8A10078676D /* EuclidFlexLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 829D5B1228F1C8A10078676D /* EuclidFlexLight.ttf */; };
+		829D5B1528F1C8AD0078676D /* EuclidFlexThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 829D5B1428F1C8AD0078676D /* EuclidFlexThin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		829D5A2C28F183250078676D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829D5A3528F1878C0078676D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		829D5B0E28F1BB0B0078676D /* EuclidFlexSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexSemiBold.ttf; sourceTree = "<group>"; };
+		829D5B1028F1C4E50078676D /* CellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOne.swift; sourceTree = "<group>"; };
+		829D5B1228F1C8A10078676D /* EuclidFlexLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexLight.ttf; sourceTree = "<group>"; };
+		829D5B1428F1C8AD0078676D /* EuclidFlexThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexThin.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				829D5A2728F183250078676D /* Assets.xcassets */,
 				829D5A2928F183250078676D /* LaunchScreen.storyboard */,
 				829D5A2C28F183250078676D /* Info.plist */,
+				829D5B1028F1C4E50078676D /* CellOne.swift */,
 			);
 			path = YoutubeExplorePageDemo;
 			sourceTree = "<group>";
@@ -76,6 +83,8 @@
 		829D5B0D28F1BADA0078676D /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				829D5B1228F1C8A10078676D /* EuclidFlexLight.ttf */,
+				829D5B1428F1C8AD0078676D /* EuclidFlexThin.ttf */,
 				829D5B0E28F1BB0B0078676D /* EuclidFlexSemiBold.ttf */,
 			);
 			path = fonts;
@@ -141,7 +150,9 @@
 			files = (
 				829D5A2B28F183250078676D /* LaunchScreen.storyboard in Resources */,
 				829D5A2828F183250078676D /* Assets.xcassets in Resources */,
+				829D5B1328F1C8A10078676D /* EuclidFlexLight.ttf in Resources */,
 				829D5B0F28F1BB0B0078676D /* EuclidFlexSemiBold.ttf in Resources */,
+				829D5B1528F1C8AD0078676D /* EuclidFlexThin.ttf in Resources */,
 				829D5A2628F183070078676D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				829D5A2328F183010078676D /* ViewController.swift in Sources */,
+				829D5B1128F1C4E50078676D /* CellOne.swift in Sources */,
 				829D5A1F28F182FB0078676D /* AppDelegate.swift in Sources */,
 				829D5A2128F182FD0078676D /* SceneDelegate.swift in Sources */,
 				829D5A3628F1878C0078676D /* Data.swift in Sources */,

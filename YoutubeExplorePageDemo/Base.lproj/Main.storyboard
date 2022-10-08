@@ -6,11 +6,15 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="EuclidFlexSemiBold.ttf">
             <string>EuclidFlex-SemiBold</string>
+        </array>
+        <array key="EuclidFlexThin.ttf">
+            <string>EuclidFlex-Thin</string>
         </array>
     </customFonts>
     <scenes>
@@ -128,8 +132,8 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1dA-yM-Lmw">
-                                                <rect key="frame" x="10" y="140" width="370" height="32"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1dA-yM-Lmw" userLabel="LabelStackView">
+                                                <rect key="frame" x="10" y="160" width="370" height="32"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Albums &amp; Singles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-9t-1iK">
                                                         <rect key="frame" x="0.0" y="0.0" width="293" height="32"/>
@@ -147,15 +151,77 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-1z-Ycr">
+                                                <rect key="frame" x="10" y="222" width="370" height="220"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="220" id="Bl8-t1-aX0"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5EX-Nb-j6I">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellOne" id="wFy-Rt-O3d" customClass="CellOne" customModule="YoutubeExplorePageDemo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="220"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="y5J-Ti-SKO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="220"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album3" translatesAutoresizingMaskIntoConstraints="NO" id="Zrm-Dj-fqy">
+                                                                    <rect key="frame" x="4" y="4" width="142" height="142"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="142" id="bVI-Ig-O71"/>
+                                                                        <constraint firstAttribute="width" constant="142" id="r1B-RR-mYX"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dünyadan Uzak" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKv-AI-Xso">
+                                                                    <rect key="frame" x="4" y="151" width="89" height="15.333333333333343"/>
+                                                                    <fontDescription key="fontDescription" name="EuclidFlex-SemiBold" family="Euclid Flex" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mor ve ötesi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmr-Sz-Ak4">
+                                                                    <rect key="frame" x="4" y="176.33333333333334" width="66.333333333333329" height="15.333333333333343"/>
+                                                                    <fontDescription key="fontDescription" name="EuclidFlex-Thin" family="Euclid Flex" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Cmr-Sz-Ak4" firstAttribute="leading" secondItem="y5J-Ti-SKO" secondAttribute="leading" constant="4" id="5j6-B6-nLe"/>
+                                                                <constraint firstItem="XKv-AI-Xso" firstAttribute="leading" secondItem="y5J-Ti-SKO" secondAttribute="leading" constant="4" id="Emh-Z5-qpX"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Zrm-Dj-fqy" secondAttribute="trailing" constant="4" id="EyG-xL-Ep7"/>
+                                                                <constraint firstItem="Zrm-Dj-fqy" firstAttribute="leading" secondItem="y5J-Ti-SKO" secondAttribute="leading" constant="4" id="P0t-X2-d7G"/>
+                                                                <constraint firstItem="Zrm-Dj-fqy" firstAttribute="top" secondItem="y5J-Ti-SKO" secondAttribute="top" constant="4" id="Tm4-j0-IzK"/>
+                                                                <constraint firstItem="XKv-AI-Xso" firstAttribute="top" secondItem="Zrm-Dj-fqy" secondAttribute="bottom" constant="5" id="Y8f-yQ-wgb"/>
+                                                                <constraint firstItem="Cmr-Sz-Ak4" firstAttribute="top" secondItem="XKv-AI-Xso" secondAttribute="bottom" constant="10" id="z00-pf-crW"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="150" height="220"/>
+                                                        <connections>
+                                                            <outlet property="labelArtistName" destination="Cmr-Sz-Ak4" id="i35-fE-foq"/>
+                                                            <outlet property="labelSongName" destination="XKv-AI-Xso" id="3k2-gC-aF0"/>
+                                                            <outlet property="photo" destination="Zrm-Dj-fqy" id="YR0-jd-Ioc"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" red="0.038616989599999998" green="0.038616989599999998" blue="0.038616989599999998" alpha="0.88207846130000001" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="1dA-yM-Lmw" firstAttribute="top" secondItem="WwU-lI-vbf" secondAttribute="bottom" constant="30" id="8RB-Ua-Rgb"/>
+                                            <constraint firstItem="5dr-1z-Ycr" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="10" id="7B8-bc-8kQ"/>
+                                            <constraint firstItem="1dA-yM-Lmw" firstAttribute="top" secondItem="WwU-lI-vbf" secondAttribute="bottom" constant="50" id="8RB-Ua-Rgb"/>
                                             <constraint firstAttribute="trailing" secondItem="WwU-lI-vbf" secondAttribute="trailing" constant="15" id="9EO-kH-9KU"/>
+                                            <constraint firstItem="5dr-1z-Ycr" firstAttribute="top" secondItem="1dA-yM-Lmw" secondAttribute="bottom" constant="30" id="bj2-GT-YTl"/>
                                             <constraint firstItem="WwU-lI-vbf" firstAttribute="top" secondItem="BHT-jh-3rF" secondAttribute="top" constant="10" id="d6d-0J-cnE"/>
                                             <constraint firstItem="WwU-lI-vbf" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="15" id="dJS-4j-17B"/>
                                             <constraint firstItem="1dA-yM-Lmw" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="10" id="f1n-NC-fvJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="5dr-1z-Ycr" secondAttribute="trailing" constant="10" id="gAC-eQ-G3Q"/>
                                             <constraint firstAttribute="trailing" secondItem="1dA-yM-Lmw" secondAttribute="trailing" constant="10" id="iaj-nd-Pte"/>
                                             <constraint firstAttribute="height" constant="1200" id="tkW-4O-6EH"/>
                                         </constraints>
@@ -217,6 +283,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionViewOne" destination="5dr-1z-Ycr" id="qSa-RC-9wF"/>
                         <outlet property="moreButton" destination="5SV-S1-2aa" id="Eem-xU-qDi"/>
                     </connections>
                 </viewController>
@@ -321,6 +388,7 @@
         <segue reference="S8s-JS-dYE"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="album3" width="720" height="720"/>
         <image name="castIcon" width="17" height="14"/>
         <image name="chart.xyaxis.line" catalog="system" width="128" height="102"/>
         <image name="exploreIcon" width="17" height="17"/>
