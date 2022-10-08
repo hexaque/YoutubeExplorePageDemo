@@ -16,8 +16,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPh-fd-zQ0">
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHT-jh-3rF">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9F-70-0HA">
+                                                <rect key="frame" x="75" y="174" width="240" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="0uG-dh-4Rh"/>
+                                                    <constraint firstAttribute="height" constant="128" id="6Qi-Lp-lMN"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" red="0.038616989599999998" green="0.038616989599999998" blue="0.038616989599999998" alpha="0.88207846130000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="m9F-70-0HA" firstAttribute="top" secondItem="BHT-jh-3rF" secondAttribute="top" constant="174" id="5S2-QV-llc"/>
+                                            <constraint firstItem="m9F-70-0HA" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="75" id="6VX-i1-nZg"/>
+                                            <constraint firstAttribute="height" constant="1200" id="tkW-4O-6EH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BHT-jh-3rF" firstAttribute="top" secondItem="oPh-fd-zQ0" secondAttribute="top" id="DXH-sg-4Xq"/>
+                                    <constraint firstItem="BHT-jh-3rF" firstAttribute="leading" secondItem="oPh-fd-zQ0" secondAttribute="leading" id="DlN-pP-AfG"/>
+                                    <constraint firstAttribute="bottom" secondItem="BHT-jh-3rF" secondAttribute="bottom" id="ajF-bh-rqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="BHT-jh-3rF" secondAttribute="trailing" id="xxP-aR-vbn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oPh-fd-zQ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Tc-bs-oFm"/>
+                            <constraint firstItem="oPh-fd-zQ0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lxi-K0-DXA"/>
+                            <constraint firstItem="BHT-jh-3rF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="isx-Nv-xex"/>
+                            <constraint firstItem="oPh-fd-zQ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o6K-fX-kql"/>
+                            <constraint firstAttribute="bottom" secondItem="oPh-fd-zQ0" secondAttribute="bottom" id="u7c-2A-ONN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HDl-30-u6g">
                         <barButtonItem key="leftBarButtonItem" enabled="NO" title="Item" id="IOD-9w-Iwu" userLabel="photo">
@@ -59,20 +99,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2402" y="11"/>
+            <point key="canvasLocation" x="2401.5384615384614" y="10.663507109004739"/>
         </scene>
         <!--Home-->
         <scene sceneID="VGe-eE-xBK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cE6-Pf-4V4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gtA-Q2-mjN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="Lww-oo-ryM">
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Home" id="Lww-oo-ryM">
                         <imageReference key="image" image="homeIcon" symbolScale="large"/>
                         <color key="badgeColor" red="1" green="1" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sVw-O7-egs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="sVw-O7-egs">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -84,6 +123,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S8s-JS-dYE"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cE6-Pf-4V4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="855" y="4"/>
         </scene>
@@ -92,12 +132,13 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aW8-be-JLt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZHo-a6-7g3">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ZHo-a6-7g3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.15295472739999999" green="0.14488071199999999" blue="0.15686422589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.14509803921568626" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="1" green="1" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="barTintColor" red="1" green="1" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="selectedImageTintColor" red="1" green="1" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.15294117647058825" green="0.14509803921568626" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="gtA-Q2-mjN" kind="relationship" relationship="viewControllers" id="xpB-V2-Eff"/>
@@ -136,7 +177,7 @@
         <scene sceneID="hMI-8S-HJ6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hha-We-d7N" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Library" image="libraryMusicIcon" selectedImage="libraryMusicIcon" id="tRZ-NL-xFA"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Library" image="libraryMusicIcon" selectedImage="libraryMusicIcon" id="tRZ-NL-xFA"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CAv-GK-AKd">
@@ -154,7 +195,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S8s-JS-dYE"/>
+        <segue reference="kVV-Dj-PDi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="castIcon" width="17" height="14"/>
@@ -172,6 +213,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
