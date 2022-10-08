@@ -9,27 +9,40 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var moreButton1: UIButton!
     @IBOutlet weak var collectionViewOne: UICollectionView!
-    @IBOutlet weak var moreButton: UIButton!
+   
+    @IBOutlet weak var moreButton2: UIButton!
     var collection1List = [NewAlbumSongs1]()
     override func viewDidLoad() {
+        tabBarController?.selectedIndex = 1
         collectionViewOne.delegate = self
         collectionViewOne.dataSource = self
-        
+        buttonDesign()
         dataPrepare()
-        topMoodTasarim()
+        topMoodDesign()
         super.viewDidLoad()
         
-        tabBarController?.selectedIndex = 1
-        moreButton.layer.cornerRadius = 15
-        moreButton.layer.borderColor = UIColor.white.cgColor
-        moreButton.layer.borderWidth = 0.4
+        
+        
+        moreButton1.layer.cornerRadius = 15
+        moreButton1.layer.borderColor = UIColor.white.cgColor
+        moreButton1.layer.borderWidth = 0.4
         
         
         
         
     }
     
+    func buttonDesign(){
+        moreButton1.layer.cornerRadius = 15
+        moreButton1.layer.borderColor = UIColor.white.cgColor
+        moreButton1.layer.borderWidth = 0.4
+        
+        moreButton2.layer.cornerRadius = 15
+        moreButton2.layer.borderColor = UIColor.white.cgColor
+        moreButton2.layer.borderWidth = 0.4
+    }
     
     
     
@@ -71,7 +84,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
             
     }
-    func topMoodTasarim(){
+    func topMoodDesign(){
         let tasarim = UICollectionViewFlowLayout()
          tasarim.scrollDirection = .horizontal
          tasarim.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

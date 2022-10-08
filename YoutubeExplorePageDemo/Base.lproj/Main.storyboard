@@ -132,17 +132,21 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1dA-yM-Lmw" userLabel="LabelStackView">
-                                                <rect key="frame" x="10" y="160" width="370" height="32"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1dA-yM-Lmw" userLabel="LabelStackView1">
+                                                <rect key="frame" x="10" y="160" width="370" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Albums &amp; Singles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-9t-1iK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="293" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="30"/>
                                                         <fontDescription key="fontDescription" name="EuclidFlex-SemiBold" family="Euclid Flex" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SV-S1-2aa">
-                                                        <rect key="frame" x="293" y="0.0" width="77" height="32"/>
+                                                        <rect key="frame" x="310" y="0.0" width="60" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="FUr-4O-cVF"/>
+                                                            <constraint firstAttribute="height" constant="30" id="NXZ-0v-gAf"/>
+                                                        </constraints>
                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="More" titleAlignment="center">
@@ -152,7 +156,7 @@
                                                 </subviews>
                                             </stackView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-1z-Ycr">
-                                                <rect key="frame" x="10" y="222" width="370" height="220"/>
+                                                <rect key="frame" x="10" y="220" width="370" height="220"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="220" id="Bl8-t1-aX0"/>
@@ -210,6 +214,29 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hgH-Ga-p9m" userLabel="LabelStackView1">
+                                                <rect key="frame" x="10" y="480" width="370" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top songs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="law-cR-nFJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="30"/>
+                                                        <fontDescription key="fontDescription" name="EuclidFlex-SemiBold" family="Euclid Flex" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bi-jU-7Wy">
+                                                        <rect key="frame" x="310" y="0.0" width="60" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="Fal-ri-yru"/>
+                                                            <constraint firstAttribute="height" constant="30" id="w2W-D0-3AN"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="More" titleAlignment="center">
+                                                            <fontDescription key="titleFontDescription" name="EuclidFlex-SemiBold" family="Euclid Flex" pointSize="14"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" red="0.038616989599999998" green="0.038616989599999998" blue="0.038616989599999998" alpha="0.88207846130000001" colorSpace="custom" customColorSpace="displayP3"/>
@@ -217,11 +244,14 @@
                                             <constraint firstItem="5dr-1z-Ycr" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="10" id="7B8-bc-8kQ"/>
                                             <constraint firstItem="1dA-yM-Lmw" firstAttribute="top" secondItem="WwU-lI-vbf" secondAttribute="bottom" constant="50" id="8RB-Ua-Rgb"/>
                                             <constraint firstAttribute="trailing" secondItem="WwU-lI-vbf" secondAttribute="trailing" constant="15" id="9EO-kH-9KU"/>
+                                            <constraint firstItem="hgH-Ga-p9m" firstAttribute="top" secondItem="5dr-1z-Ycr" secondAttribute="bottom" constant="40" id="EpW-6E-rCn"/>
                                             <constraint firstItem="5dr-1z-Ycr" firstAttribute="top" secondItem="1dA-yM-Lmw" secondAttribute="bottom" constant="30" id="bj2-GT-YTl"/>
                                             <constraint firstItem="WwU-lI-vbf" firstAttribute="top" secondItem="BHT-jh-3rF" secondAttribute="top" constant="10" id="d6d-0J-cnE"/>
                                             <constraint firstItem="WwU-lI-vbf" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="15" id="dJS-4j-17B"/>
                                             <constraint firstItem="1dA-yM-Lmw" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="10" id="f1n-NC-fvJ"/>
                                             <constraint firstAttribute="trailing" secondItem="5dr-1z-Ycr" secondAttribute="trailing" constant="10" id="gAC-eQ-G3Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="hgH-Ga-p9m" secondAttribute="trailing" constant="10" id="gTJ-1A-4DB"/>
+                                            <constraint firstItem="hgH-Ga-p9m" firstAttribute="leading" secondItem="BHT-jh-3rF" secondAttribute="leading" constant="10" id="gbv-8x-NHE"/>
                                             <constraint firstAttribute="trailing" secondItem="1dA-yM-Lmw" secondAttribute="trailing" constant="10" id="iaj-nd-Pte"/>
                                             <constraint firstAttribute="height" constant="1200" id="tkW-4O-6EH"/>
                                         </constraints>
@@ -284,7 +314,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionViewOne" destination="5dr-1z-Ycr" id="qSa-RC-9wF"/>
-                        <outlet property="moreButton" destination="5SV-S1-2aa" id="Eem-xU-qDi"/>
+                        <outlet property="moreButton1" destination="5SV-S1-2aa" id="duI-3p-Bfd"/>
+                        <outlet property="moreButton2" destination="5bi-jU-7Wy" id="4ew-oG-ok1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
