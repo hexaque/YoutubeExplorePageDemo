@@ -33,4 +33,23 @@ struct TopSongs2{
         self.photoName = photoName
         self.upOrDownImage = upOrDownImage
     }
+    
+    
 }
+
+
+struct MoodAndGenres{
+  
+    
+    var moodName:String?
+    var colorR:Double?
+    var colorG:Double?
+    var colorB:Double?
+     init(moodName: String, colorR: Double, colorG: Double, colorB: Double) {
+        self.moodName = moodName
+        self.colorR = colorR
+        self.colorG = colorG
+        self.colorB = colorB
+    }
+}
+
