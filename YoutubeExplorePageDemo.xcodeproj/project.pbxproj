@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8260A87528F43AA4005E06B4 /* EuclidFlexBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8260A87128F43AA3005E06B4 /* EuclidFlexBold.ttf */; };
+		8260A87628F43AA4005E06B4 /* EuclidFlexMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8260A87228F43AA3005E06B4 /* EuclidFlexMedium.ttf */; };
+		8260A87828F43AA4005E06B4 /* EuclidFlexUltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8260A87428F43AA4005E06B4 /* EuclidFlexUltraLight.ttf */; };
 		829D5A1F28F182FB0078676D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D5A1E28F182FB0078676D /* AppDelegate.swift */; };
 		829D5A2128F182FD0078676D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D5A2028F182FD0078676D /* SceneDelegate.swift */; };
 		829D5A2328F183010078676D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D5A2228F183010078676D /* ViewController.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8260A87128F43AA3005E06B4 /* EuclidFlexBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexBold.ttf; sourceTree = "<group>"; };
+		8260A87228F43AA3005E06B4 /* EuclidFlexMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexMedium.ttf; sourceTree = "<group>"; };
+		8260A87428F43AA4005E06B4 /* EuclidFlexUltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuclidFlexUltraLight.ttf; sourceTree = "<group>"; };
 		829D5A1B28F182F80078676D /* YoutubeExplorePageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeExplorePageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		829D5A1E28F182FB0078676D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		829D5A2028F182FD0078676D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 			children = (
 				829D5B1228F1C8A10078676D /* EuclidFlexLight.ttf */,
 				829D5B1428F1C8AD0078676D /* EuclidFlexThin.ttf */,
+				8260A87128F43AA3005E06B4 /* EuclidFlexBold.ttf */,
+				8260A87228F43AA3005E06B4 /* EuclidFlexMedium.ttf */,
+				8260A87428F43AA4005E06B4 /* EuclidFlexUltraLight.ttf */,
 				829D5B0E28F1BB0B0078676D /* EuclidFlexSemiBold.ttf */,
 			);
 			path = fonts;
@@ -152,10 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				829D5A2B28F183250078676D /* LaunchScreen.storyboard in Resources */,
+				8260A87528F43AA4005E06B4 /* EuclidFlexBold.ttf in Resources */,
 				829D5A2828F183250078676D /* Assets.xcassets in Resources */,
 				829D5B1328F1C8A10078676D /* EuclidFlexLight.ttf in Resources */,
 				829D5B0F28F1BB0B0078676D /* EuclidFlexSemiBold.ttf in Resources */,
 				829D5B1528F1C8AD0078676D /* EuclidFlexThin.ttf in Resources */,
+				8260A87828F43AA4005E06B4 /* EuclidFlexUltraLight.ttf in Resources */,
+				8260A87628F43AA4005E06B4 /* EuclidFlexMedium.ttf in Resources */,
 				829D5A2628F183070078676D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

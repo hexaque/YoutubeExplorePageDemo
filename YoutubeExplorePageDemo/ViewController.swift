@@ -162,6 +162,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
 
          let hucreUzunlugu = collectionViewOne.bounds.height
         
+        
          tasarim.itemSize = CGSize(width: hucreGenisligi, height: hucreUzunlugu)
          collectionViewOne.collectionViewLayout = tasarim
         
@@ -177,7 +178,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
 
         let hucreUzunlugu = (collectionViewTwo.bounds.height-30)/4
        
-        tasarim.itemSize = CGSize(width: hucreGenisligi-20, height: hucreUzunlugu)
+        tasarim.itemSize = CGSize(width: hucreGenisligi, height: hucreUzunlugu)
 
          collectionViewTwo.collectionViewLayout = tasarim
         
