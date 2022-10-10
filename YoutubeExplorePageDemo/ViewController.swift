@@ -88,15 +88,15 @@ class ViewController: UIViewController {
         let  ts12 = TopSongs2(songName: "Master of puppets", artistName: "Metallica", photoName: "album3",upOrDownImage: "upIcon")
         
         
-        let m1 = MoodAndGenres(moodName: "Energy", colorR: 40, colorG: 50, colorB: 60)
+        let m1 = MoodAndGenres(moodName: "Energy", colorR: 183, colorG: 137, colorB: 248)
         let m2 = MoodAndGenres(moodName: "Energy1", colorR: 140, colorG: 150, colorB: 160)
-        let m3 = MoodAndGenres(moodName: "Energy1", colorR: 190, colorG: 20, colorB: 90)
-        let m4 = MoodAndGenres(moodName: "Energy", colorR: 40, colorG: 50, colorB: 60)
-        let m5 = MoodAndGenres(moodName: "Energy1", colorR: 140, colorG: 150, colorB: 160)
-        let m6 = MoodAndGenres(moodName: "Energy1", colorR: 190, colorG: 20, colorB: 90)
-        let m7 = MoodAndGenres(moodName: "Energy", colorR: 40, colorG: 50, colorB: 60)
-        let m8 = MoodAndGenres(moodName: "Energy1", colorR: 140, colorG: 150, colorB: 160)
-        let m9 = MoodAndGenres(moodName: "Energy1", colorR: 190, colorG: 20, colorB: 90)
+        let m3 = MoodAndGenres(moodName: "Energy1", colorR: 195, colorG: 40, colorB: 28)
+        let m4 = MoodAndGenres(moodName: "Energy", colorR: 252, colorG: 236, colorB: 154)
+        let m5 = MoodAndGenres(moodName: "Energy1", colorR: 40, colorG: 50, colorB: 160)
+        let m6 = MoodAndGenres(moodName: "Energy1", colorR: 190, colorG: 120, colorB: 90)
+        let m7 = MoodAndGenres(moodName: "Energy", colorR: 10, colorG: 20, colorB: 220)
+        let m8 = MoodAndGenres(moodName: "Energy1", colorR: 200, colorG: 5, colorB: 60)
+        let m9 = MoodAndGenres(moodName: "Energy1", colorR: 30, colorG: 220, colorB: 254)
        
         collection1List.append(s1)
         collection1List.append(s2)
@@ -181,7 +181,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
             let mood = collection3List[indexPath.row]
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellThree", for: indexPath) as! CellThree
             cell.labelMood.text = mood.moodName
-            cell.colorView.backgroundColor = UIColor(red:CGFloat(mood.colorR!/255), green: CGFloat(mood.colorG!/255), blue: CGFloat(mood.colorB!/255), alpha: 0.5)
+            cell.colorView.backgroundColor = UIColor(red:CGFloat(mood.colorR!/255), green: CGFloat(mood.colorG!/255), blue: CGFloat(mood.colorB!/255), alpha: 1)
             
             
             return cell
