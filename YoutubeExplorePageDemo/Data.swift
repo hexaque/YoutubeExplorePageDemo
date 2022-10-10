@@ -63,12 +63,12 @@ extension ViewController {
         let  s2 = NewAlbumSongs1(songName: "Born to die", artistName: "Lana Del Rey", photoName: "lana")
         let  s3 = NewAlbumSongs1(songName: " Nothing else matters", artistName: "Metallica", photoName: "album3")
         let  s4 = NewAlbumSongs1(songName: "Bir kadın çizeceksin", artistName: "Manga", photoName: "album4")
-        let  s5 = NewAlbumSongs1(songName: "Dünyadan uzak", artistName: "Mor ve ötesi", photoName: "album1")
+        let  s5 = NewAlbumSongs1(songName: "Tünel", artistName: "Mor ve ötesi", photoName: "album1")
         let  s6 = NewAlbumSongs1(songName: "Master of puppets", artistName: "Metallica", photoName: "album3")
         
         
         
-        let  ts1 = TopSongs2(songName: "Dünyadan uzak", artistName: "Mor ve ötesi", photoName: "album1",upOrDownImage: "upIcon")
+        let  ts1 = TopSongs2(songName: "Tünel", artistName: "Mor ve ötesi", photoName: "album1",upOrDownImage: "upIcon")
         let  ts2 = TopSongs2(songName: "Speak to me", artistName: "Pink Floyd", photoName: "pinkFloyd",upOrDownImage: "dotIcon")
         let  ts3 = TopSongs2(songName: "Let it be", artistName: "The Beatles ", photoName: "theBeatles",upOrDownImage: "downIcon")
         let  ts4 = TopSongs2(songName: "Nothing else matters", artistName: "Metallica", photoName: "album3",upOrDownImage: "downIcon")
